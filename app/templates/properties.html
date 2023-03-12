@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1 class="display-5 fw-bold">Properties</h1>
+
+{% include 'flash_messages.html' %}
+
+<div class="row row-cols-1 row-cols-md-3">
+    {% for property in properties %}
+    <div class="col p-4">
+        <div class="card h-100">
+            <img class="card-img-top" src="{{ url_for('get_photo', filename=property.photoName) }}" />
+        
+            <div class="card-body">
+                <ul>
+                    <li class="h5">{{ property.propertyTitle }}</li>
+                    <div>
+                        <img class="card-text mb-1" id="photo-location" src="{{ url_for('static', filename='/css/location.png') }}" />
+                        <li class="card-text mt-3" id="photo-location">{{ property.location }}</li>
+                    </div>
+                    <div>
+                        <li class="card-text mt-3 rounded-pill btn btn-success">{{ property.price }}</li>
+                    </div>
+                    <button class="mt-4">View Property</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

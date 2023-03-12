@@ -9,7 +9,7 @@ class Property(db.Model):
     description = db.Column(db.String(1000))
     bedrooms = db.Column(db.Integer)
     bathrooms = db.Column(db.Integer)
-    price = db.Column(db.Integer)
+    price = db.Column(db.String(80))
     propertyType = db.Column(db.String(80))
     location = db.Column(db.String(80))
     photoName = db.Column(db.String(80))
