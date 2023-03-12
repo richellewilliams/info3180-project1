@@ -1,3 +1,120 @@
 body {
     padding-top: 5rem;
 }
+
+span {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+input {
+    box-sizing: border-box;
+    border: 2px solid rgb(204, 201, 203);
+    border-radius: 5px;
+    width: 70%;
+    height: 45px;
+    padding-left: 10px;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: 2px solid rgb(204, 201, 203);
+    border-radius: 5px;
+    resize: none;
+    width: 70%;
+    height: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#rows {
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto; 
+    width: 82%;
+}
+
+#drop-down {
+    box-sizing: border-box;
+    border: 2px solid rgb(204, 201, 203);
+    border-radius: 5px;
+    width: 70%;
+    height: 45px;
+    padding: 8px 8px 10px 14px;
+    overflow: hidden;
+}
+
+#drop-down #propertyType {
+    width: 120%;
+    background:url('arrow.png') no-repeat;
+    background-position:80% center;
+    background-size: 20px;
+}
+
+#drop-down #propertyType {
+    width: 120%;
+}
+
+#drop-down select {
+    background: transparent;
+    line-height: 1;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 120%;
+    position: relative;
+    z-index: 10;
+}
+
+label #photo input[type="file"] {
+    position: absolute;
+}
+  
+#photo {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    padding-right: 0px;
+}
+
+#photo::-webkit-file-upload-button { 
+    visibility: hidden; 
+    padding-right: 0px;    
+}
+
+#photo::before {
+    color: black;
+    content: 'Browse';
+    cursor: pointer;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    border: 2px solid rgb(204, 201, 203);
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: -10px;
+    outline: none;
+    padding: 5px 23px;
+    -webkit-user-select: none;
+    white-space: nowrap;
+}
+
+button {
+    background-color: #2987cd;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 400;
+    margin-left: -9px;
+}
+
+#button {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
