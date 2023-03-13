@@ -65,6 +65,13 @@ def properties():
 def get_photo(filename):
     return send_from_directory(os.path.join(os.getcwd(), app.config['UPLOAD_FOLDER']), filename)
 
+
+@app.route('/properties/<propertyid>')
+def get_property(propertyid):
+    propertyid = Property.query.filter_by(id=propertyid).first()
+    return render_template('get_property.html', propertyid=propertyid)
+
+
 ###
 # The functions below should be applicable to all Flask apps.
 ###

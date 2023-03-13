@@ -7,7 +7,7 @@
 
 <div class="row row-cols-1 row-cols-md-3">
     {% for property in properties %}
-    <div class="col p-4">
+    <div class="col p-3">
         <div class="card h-100">
             <img class="card-img-top" src="{{ url_for('get_photo', filename=property.photoName) }}" />
         
@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <div class="card-footer text-center">
-                <a href="#" class="card-link">View Property</a>
+                <a href="{{ url_for('get_property', propertyid=property.id) }}" class="card-link">View Property</a>
             </div>
         </div>
     </div>

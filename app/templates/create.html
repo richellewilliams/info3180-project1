@@ -8,7 +8,7 @@
 <form method="post" action="{{ url_for('create') }}"  method="post" enctype="multipart/form-data">
     {{ form.csrf_token }}
 
-    <div id="label">{{ form.propertyTitle.label }}</div>
+    <div id="label" >{{ form.propertyTitle.label }}</div>
     {{ form.propertyTitle }}
 
     <div id="label">{{ form.description.label }}</div>
@@ -16,20 +16,20 @@
 
     <div id="rows">
         <div><div id="label">{{ form.bedrooms.label }}</div>
-        {{ form.bedrooms }}</div>
+        {{ form.bedrooms(placeholder="3") }}</div>
 
         <div><div id="label">{{ form.bathrooms.label }}</div>
-        {{ form.bathrooms }}</div>
+        {{ form.bathrooms(placeholder="2") }}</div>
 
         <div><div id="label">{{ form.price.label }}</div>
-        {{ form.price }}</div>
+        {{ form.price(placeholder="$15,000,000")  }}</div>
 
         <div><div id="label">{{ form.propertyType.label }}</div>
         <div id="drop-down">{{ form.propertyType }}</div></div>
     </div>
     
     <div id="label">{{ form.location.label }}</div>
-    {{ form.location }}
+    {{ form.location(placeholder="10 Waterloo Rd") }}
 
     <div id="label">{{ form.photo.label }}</div>
      <div id="photo-button">{{ form.photo }}</div>

@@ -61,6 +61,7 @@ textarea {
 }
 
 #drop-down select {
+    color: black;
     background: transparent;
     line-height: 1;
     border: 0;
@@ -73,6 +74,7 @@ textarea {
 
 label #photo input[type="file"] {
     position: absolute;
+    content: 'Browse';
 }
   
 #photo {
@@ -80,6 +82,7 @@ label #photo input[type="file"] {
     border: none;
     display: inline-block;
     padding-right: 0px;
+    color: transparent;
 }
 
 #photo::-webkit-file-upload-button { 
@@ -88,7 +91,7 @@ label #photo input[type="file"] {
 }
 
 #photo::before {
-    color: black;
+    color: #777777;
     content: 'Browse';
     cursor: pointer;
     display: inline-block;
@@ -100,6 +103,7 @@ label #photo input[type="file"] {
     outline: none;
     padding: 5px 23px;
     -webkit-user-select: none;
+    user-select: none;
     white-space: nowrap;
 }
 
@@ -115,7 +119,6 @@ button {
 
 #button {
     padding-top: 40px;
-    padding-bottom: 10px;
     padding-left: 10px;
 }
 
@@ -131,8 +134,8 @@ li {
 
 a {
     color: white;
-  text-decoration: none;
-  text-align: center;
+    text-decoration: none;
+    text-align: center;
 }
 
 a:hover {
@@ -150,4 +153,51 @@ a:hover {
     height: 20px;
     width: 20px;
     padding-right: 1px;
+}
+
+#email-realter {
+    margin-top: 25px;
+}
+
+#property-title {
+
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#price-type{
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+#price-s {
+    margin-right: 20px;
+}
+
+#descript {
+
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#bedroom-image {
+    margin-bottom: 10px;
+}
+
+#bedrooms-bathrooms {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+#locationn {
+    padding-left: 30px;
+}
+
+#email-realter {
+    background-color: #1ec0ad;
+    margin-left: 30px;
 }

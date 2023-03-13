@@ -7,7 +7,7 @@ class PropertiesForm(FlaskForm):
     propertyTitle = StringField('Property Title', validators=[InputRequired()])
     description = TextAreaField('Description', validators=[InputRequired()])
     bedrooms = IntegerField('No. of Rooms', validators=[InputRequired()])
-    bathrooms = IntegerField('No. of Bathrooms', validators=[InputRequired()])
+    bathrooms = StringField('No. of Bathrooms', validators=[InputRequired()])
     price = StringField('Price', validators=[InputRequired()])
     propertyType = SelectField(u'Property Type', choices=[('House'), ('Apartment')], validators=[InputRequired()])
     location = StringField('Location', validators=[InputRequired()])

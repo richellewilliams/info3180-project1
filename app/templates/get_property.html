@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="card mb-3 mx-auto">
+  <div class="row g-0">
+
+    <div class="col-md-6">
+      <img class="img-fluid rounded-start" src="{{ url_for('get_photo', filename=propertyid.photoName) }}">
+    </div>
+
+    <div class="col-md-6">
+      <div class="card-body">
+        <div id="property-title">
+          <h4 class="card-title">{{ propertyid.propertyTitle }}</h4>
+        </div>
+
+        <div id="price-type">
+            <li id="price-s" class="card-text pl-3 pr-3 rounded-pill btn btn-success">{{ propertyid.price }}</li>
+            <li class="card-text pl-3 pr-3 rounded-pill btn btn-warning">{{ propertyid.propertyType }}</li>
+
+          </div>
+          
+        <div id="descript"><p class="card-text">{{ propertyid.description }}</p></div>
+
+        <div id="bedrooms-bathrooms">
+          <img class="card-text mb-2" id="photo-location" src="{{ url_for('static', filename='/css/bed.png') }}"/>
+          <p id="photo-location" class="card-text">{{ propertyid.bedrooms }} Bedrooms</p>
+            
+          <img class="card-text mb-1" id="photo-location" src="{{ url_for('static', filename='/css/shower.png') }}"/>
+          <p id="photo-location" class="card-text">{{ propertyid.bathrooms }} Bathrooms</p>
+        </div>
+          
+        <div id="locationn">
+          <img class="card-text mb-1" id="photo-location" src="{{ url_for('static', filename='/css/location.png') }}" />
+          <p class="card-text mt-3" id="photo-location">{{ propertyid.location }}</p>
+        </div>
+
+        <div><button id="email-realter" href="#">Email Realter</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
