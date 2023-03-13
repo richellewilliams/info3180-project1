@@ -8,18 +8,18 @@
 <div class="row row-cols-1 row-cols-md-3">
     {% for property in properties %}
     <div class="col p-3">
-        <div class="card h-100">
+        <div class="card h-100 shadow bg-white rounded">
             <img class="card-img-top" src="{{ url_for('get_photo', filename=property.photoName) }}" />
         
             <div class="card-body">
                 <ul>
                     <li class="h5">{{ property.propertyTitle }}</li>
                     <div>
-                        <img class="card-text mb-1" id="photo-location" src="{{ url_for('static', filename='/css/location.png') }}" />
+                        <img class="card-text mb-1" id="photo-location" src="{{ url_for('static', filename='/css/location-v1.png') }}" />
                         <li class="card-text mt-3" id="photo-location">{{ property.location }}</li>
                     </div>
                     <div>
-                        <li class="card-text mt-3 pl-3 pr-3 rounded-pill btn btn-success">{{ property.price }}</li>
+                        <li id="pill-btn" class="card-text mt-3 rounded-pill btn btn-success">{{ property.price }}</li>
                     </div>
                 </ul>
             </div>

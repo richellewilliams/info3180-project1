@@ -54,9 +54,6 @@ textarea {
     background:url('arrow.png') no-repeat;
     background-position:80% center;
     background-size: 20px;
-}
-
-#drop-down #propertyType {
     width: 120%;
 }
 
@@ -130,6 +127,7 @@ li {
     height:20px;
     width: 20px;
     display: inline;
+    color: grey;
 }
 
 a {
@@ -150,17 +148,26 @@ a:hover {
     background-color: #1ec0ad !important;}
 
 #home {
-    height: 20px;
-    width: 20px;
-    padding-right: 1px;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
 }
 
-#email-realter {
-    margin-top: 25px;
+#navbarSupportedContent {
+    padding-left: 35px;
+}
+
+#pill-btn {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#property-image {
+    height: 100%;
+    width: 100%;
 }
 
 #property-title {
-
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 20px;
@@ -171,27 +178,40 @@ a:hover {
     padding-bottom: 20px;
 }
 
-#price-s {
-    margin-right: 20px;
+#pill-btn-price {
+    margin-right: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#pill-btn-property-type {
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 #descript {
-
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-bottom: 20px;
-}
-
-#bedroom-image {
-    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 #bedrooms-bathrooms {
+    display: flex;
     padding-left: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
+#bedrms {
+    padding-right: 30px;
+}
 
+#photo-location-2 {
+    height:20px;
+    width: 20px;
+    display: inline;
+    color: black;
+}
 
 #locationn {
     padding-left: 30px;
@@ -199,5 +219,7 @@ a:hover {
 
 #email-realter {
     background-color: #1ec0ad;
-    margin-left: 30px;
+    margin-left: 30px; 
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
