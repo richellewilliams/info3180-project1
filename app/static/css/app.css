@@ -129,16 +129,25 @@ li {
     display: inline;
 }
 
-
-.btn-success,
-.btn-success:hover,
-.btn-success:focus,
-.btn-success:active    {
-        background-color: #1ec0ad;
-        color: #FFF;
-        border-color: #1ec0ad;
+a {
+    color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
-.price:before {
-    content: '$';
+a:hover {
+    color: white;
+}
+
+.card-footer {
+    background-color: #1ec0ad;
+}
+
+.bg-primary {
+    background-color: #1ec0ad !important;}
+
+#home {
+    height: 20px;
+    width: 20px;
+    padding-right: 1px;
 }
